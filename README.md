@@ -17,30 +17,28 @@
 
 ## 🚀 Featured Projects
 
-### 🏡 Predictive Analysis of Iowa Housing Prices
-**Objective:** Forecast housing prices using a comprehensive dataset and advanced modeling in Python.
-**Outcome:** Achieved remarkable accuracy, providing valuable insights into market trends and investment opportunities.
-[Explore the Project](#)
-
-### 🍴 NLP Restaurant Review Analysis
-**Situation:** The project was designed to enhance restaurant recommendations by using the Yelp dataset, which included detailed restaurant profiles, user reviews, and user metadata. The challenge was to leverage this rich dataset to develop sophisticated recommender systems that could accurately reflect user preferences and current dining trends.
-**Task:** The aim was to create advanced content-based and collaborative recommender systems. The content-based systems would employ Principal Component Analysis (PCA) and Singular Value Decomposition (SVD) to discern key restaurant features that influence user preferences. The collaborative system was intended to identify user patterns and preferences, especially focusing on similarities among patrons of popular dining spots like 'Ace Bar'.
-**Action**: 
-**Data Handling**: Utilized Jupyter Notebook for comprehensive data analysis and preprocessing. Tasks included data cleaning, merging datasets, transforming JSON-formatted data into analyzable columns, and focusing on relevant reviews from open restaurants post-2015.
-**Content-Based Systems**: Implemented PCA to reduce dimensionality and identify crucial similarities in cuisine types and restaurant categories. SVD was also used to analyze and ascertain deeper attributes and categories that contribute to restaurant similarities.
-**Collaborative System**: Developed a system based on analyzing user preferences for specific types of food, such as sandwiches, and comparing these to the preferences of users frequenting 'Ace Bar', thus creating a model that reflects real user choices and preferences.
-**Result**
-**Content-Based Systems**: Both PCA and SVD effectively pinpointed restaurants with similar offerings, with SVD showing higher similarity scores and excelling in identifying nuanced similarities across diverse cuisines, particularly Korean and other Asian foods.
-**Collaborative System**: The system adeptly identified a variety of restaurants that aligned with the preferences of 'Ace Bar' patrons, confirming its capability to utilize user data for refining recommendations.
-**Conclusion**: This project successfully demonstrated the potential of using sophisticated analytical techniques in recommender systems to provide targeted and effective restaurant suggestions. The integration of both content-based and collaborative approaches allowed for a nuanced understanding of user preferences and restaurant similarities, showcasing how rich datasets like Yelp's can be harnessed to enhance the accuracy and personalization of restaurant recommendations.
-![Word cloud for 5 star ratings reviews](assets/WC.png)
-Link:https://github.com/IamReshmaR/Restaurant-Recommeder-System
+### 🍴 AI-Driven Restaurant Recommender System
+**Situation:** Leveraged the Yelp dataset containing detailed restaurant profiles, user reviews, and metadata to enhance restaurant recommendations.
+**Task:** Developed both content-based and collaborative recommender systems using advanced techniques like PCA and SVD.
+**Action:**
+  - **Data Handling:** Employed Jupyter Notebook for data cleaning, merging, and transformation to prepare a comprehensive analysis setup.
+  - **Content-Based System:** Utilized PCA and SVD to identify key restaurant features and similarities.
+  - **Collaborative System:** Analyzed user preferences related to popular spots like 'Ace Bar' to tailor recommendations.
+**Result:** The content-based system effectively identified nuanced similarities across cuisines, while the collaborative system aligned recommendations with user preferences, enhancing personalization and accuracy.
+**Conclusion:** Demonstrated the power of sophisticated analytical techniques in creating effective recommender systems.
+[Explore the Project](https://github.com/IamReshmaR/Restaurant-Recommeder-System)
+![word cloud for 5 star rated reviews](assets/WC.png)
 
 
-### 📊 Employee Attrition Dashboard in Tableau
-**Objective:** Analyze employee turnover data to identify and address key attrition drivers.
-**Outcome:** Delivered actionable insights through a custom interactive dashboard, significantly aiding HR decision-making.
-[Explore the Project](#)
+### 🏡 Airbnb Price Prediction and Value Identification Model
+**Situation:** Airbnb's market dynamics present pricing challenges for hosts and value-finding difficulties for guests.
+**Task:** Develop models to predict Airbnb listing prices and identify high-value listings.
+**Action:**
+  - Analyzed Airbnb data, handling preprocessing tasks like null value management and outlier removal.
+  - Applied Lasso and Ridge regression for price predictions and tested various classification models for value identification.
+**Result:** Enhanced prediction accuracy and identified the Random Forest Classifier as the most effective for classifying high-value listings.
+**Conclusion:** The models help hosts optimize earnings and assist guests in finding ideal accommodations.
+[Explore the Project](https://github.com/IamReshmaR/Airbnb-Price-Prediction-and-Value-Identification-Model)
 
 ## 🌐 Connect with Me
 
@@ -48,6 +46,6 @@ Interested in collaborating or learning more about my work? Let's connect!
 
 - **Email:** [reshmarajan3590@gmail.com](mailto:reshmarajan3590@gmail.com)
 - **LinkedIn:** [Reshma Rajan on LinkedIn](#)
-
+- **Phone:** 615-638-9013
 
 Thank you for exploring my portfolio. Looking forward to making a significant impact together in the world of data science!
