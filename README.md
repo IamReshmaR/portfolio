@@ -35,6 +35,7 @@ Result
 **Content-Based Systems**: Both PCA and SVD effectively pinpointed restaurants with similar offerings, with SVD showing higher similarity scores and excelling in identifying nuanced similarities across diverse cuisines, particularly Korean and other Asian foods.
 **Collaborative System**: The system adeptly identified a variety of restaurants that aligned with the preferences of 'Ace Bar' patrons, confirming its capability to utilize user data for refining recommendations.
 **Conclusion **: This project successfully demonstrated the potential of using sophisticated analytical techniques in recommender systems to provide targeted and effective restaurant suggestions. The integration of both content-based and collaborative approaches allowed for a nuanced understanding of user preferences and restaurant similarities, showcasing how rich datasets like Yelp's can be harnessed to enhance the accuracy and personalization of restaurant recommendations.
+![Word cloud for 5 star ratings reviews](assets/WC.png)
 
 
 
