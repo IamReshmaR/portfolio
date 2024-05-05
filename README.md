@@ -18,26 +18,25 @@
 ## 🚀 Featured Projects
 
 ### 🍴 AI-Driven Restaurant Recommender System
-**Situation:** Leveraged the Yelp dataset containing detailed restaurant profiles, user reviews, and metadata to enhance restaurant recommendations.
-**Task:** Developed both content-based and collaborative recommender systems using advanced techniques like PCA and SVD.
-**Action:**
+-**Situation:** Leveraged the Yelp dataset containing detailed restaurant profiles, user reviews, and metadata to enhance restaurant recommendations.
+-**Task:** Developed both content-based and collaborative recommender systems using advanced techniques like PCA and SVD.
+-**Action:**
   - **Data Handling:** Employed Jupyter Notebook for data cleaning, merging, and transformation to prepare a comprehensive analysis setup.
   - **Content-Based System:** Utilized PCA and SVD to identify key restaurant features and similarities.
   - **Collaborative System:** Analyzed user preferences related to popular spots like 'Ace Bar' to tailor recommendations.
-**Result:** The content-based system effectively identified nuanced similarities across cuisines, while the collaborative system aligned recommendations with user preferences, enhancing personalization and accuracy.
-**Conclusion:** Demonstrated the power of sophisticated analytical techniques in creating effective recommender systems.
+-**Result:** The content-based system effectively identified nuanced similarities across cuisines, while the collaborative system aligned recommendations with user preferences, enhancing personalization and accuracy.
+-**Conclusion:** Demonstrated the power of sophisticated analytical techniques in creating effective recommender systems.
 [Explore the Project](https://github.com/IamReshmaR/Restaurant-Recommeder-System)
 ![word cloud for 5 star rated reviews](assets/WC.png)
 
-
 ### 🏡 Airbnb Price Prediction and Value Identification Model
-**Situation:** Airbnb's market dynamics present pricing challenges for hosts and value-finding difficulties for guests.
-**Task:** Develop models to predict Airbnb listing prices and identify high-value listings.
-**Action:**
+-**Situation:** Airbnb's market dynamics present pricing challenges for hosts and value-finding difficulties for guests.
+-**Task:** Develop models to predict Airbnb listing prices and identify high-value listings.
+-**Action:**
   - Analyzed Airbnb data, handling preprocessing tasks like null value management and outlier removal.
   - Applied Lasso and Ridge regression for price predictions and tested various classification models for value identification.
-**Result:** Enhanced prediction accuracy and identified the Random Forest Classifier as the most effective for classifying high-value listings.
-**Conclusion:** The models help hosts optimize earnings and assist guests in finding ideal accommodations.
+-**Result:** Enhanced prediction accuracy and identified the Random Forest Classifier as the most effective for classifying high-value listings.
+-**Conclusion:** The models help hosts optimize earnings and assist guests in finding ideal accommodations.
 [Explore the Project](https://github.com/IamReshmaR/Airbnb-Price-Prediction-and-Value-Identification-Model)
 
 ## 🌐 Connect with Me
