@@ -38,6 +38,6 @@ Interested in collaborating or learning more about my work? Let's connect!
 
 - **Email:** [reshmarajan3590@gmail.com](mailto:reshmarajan3590@gmail.com)
 - **LinkedIn:** [Reshma Rajan on LinkedIn](#)
-- **Phone:** 615-638-9013
+
 
 Thank you for exploring my portfolio. Looking forward to making a significant impact together in the world of data science!
