@@ -6,14 +6,21 @@
 
 - **Master of Science in Data Science** (In progress) - Middle Tennessee State University, Murfreesboro TN
 - **Master of Science in Structural Engineering** - GPA 4.0, A P J Abdul Kalam Technological University, India
-- **Bachelor of Technology in Civil Engineering** - GPA 3.85,A P J Abdul Kalam Technological University, India
+- **Bachelor of Technology in Civil Engineering** - GPA 3.85, A P J Abdul Kalam Technological University, India
 
 ## 💻 Technical Expertise
 
-- **Skilled in:** Python, SQL, MS Excel
-- **Machine Learning & AI:** TensorFlow, PyTorch, Scikit-learn
-- **Data Visualization:** Expertise in Tableau and Power BI
-- **Big Data Technologies:** Proficient with AWS and Azure services
+## 💻 Technical Expertise
+
+- **Programming Languages:** Proficient in Python and SQL, with extensive experience using Python for data analysis, machine learning, and automation, as well as SQL for database management and complex queries.
+- **Data Manipulation and Analysis:** Advanced skills in using Excel for data manipulation, including complex functions like VLOOKUP, pivot tables, and macros to streamline workflows and enhance data interaction.
+- **API Integration:** Skilled in utilizing APIs for data retrieval, integration, and automation, enhancing project capabilities and data richness in real-time applications.
+- **Statistical Analysis:** Strong foundation in statistical analysis, capable of applying statistical methods to derive insights from large datasets and inform business decisions.
+- **Machine Learning & AI:** Deep understanding of machine learning and artificial intelligence using TensorFlow and PyTorch for building and deploying models, including deep learning techniques for predictive analytics.
+- **Computer Vision:** Experienced in computer vision projects using OpenCV and deep learning frameworks to develop applications like facial recognition and object detection.
+- **Data Visualization:** Expertise in Tableau and Power BI for creating compelling, interactive dashboards and visualizations that convey complex data in an accessible way.
+- **Big Data Technologies:** Proficient with AWS and Azure services, leveraging cloud solutions to manage, analyze, and scale big data workflows effectively.
+
 
 ## 🚀 Featured Projects
 
