@@ -4,13 +4,13 @@
 
 ## 🎓 Educational Background
 
-- **Master of Science in Data Science** (In progress) - Middle Tennessee State University, TN
-- **Master of Science in Structural Engineering** - GPA 4.0, A P J Abdul Kalam Technological University, Kerala, India
-- **Bachelor of Technology in Civil Engineering** - GPA 3.85, Kerala, India
+- **Master of Science in Data Science** (In progress) - Middle Tennessee State University, Murfreesboro TN
+- **Master of Science in Structural Engineering** - GPA 4.0, A P J Abdul Kalam Technological University, India
+- **Bachelor of Technology in Civil Engineering** - GPA 3.85,A P J Abdul Kalam Technological University, India
 
 ## 💻 Technical Expertise
 
-- **Programming Languages:** Python, SQL
+- **Skilled in:** Python, SQL, MS Excel
 - **Machine Learning & AI:** TensorFlow, PyTorch, Scikit-learn
 - **Data Visualization:** Expertise in Tableau and Power BI
 - **Big Data Technologies:** Proficient with AWS and Azure services
