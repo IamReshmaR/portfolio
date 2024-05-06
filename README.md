@@ -21,7 +21,7 @@
 
 ## 🚀 Featured Projects
 
-### 🌧️ Rainfall Forecasting Model for an Australian Weather Company
+### 🌧️ Rainfall Forecasting Model 
 - **Situation:** Tasked with improving weather prediction accuracy for an Australian weather forecasting company.
 - **Task:** Develop predictive models to accurately forecast rainfall and enhance decision-making tools.
 - **Action:**
