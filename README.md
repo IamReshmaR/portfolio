@@ -1,6 +1,6 @@
 # Welcome to Reshma Rajan's Data Science Portfolio
 
-🌟 Dive into my world of data-driven decision-making where advanced analytics and machine learning meet practical applications. As a graduate student at Middle Tennessee State University specializing in Data Science, I harness the power of Python, SQL, and sophisticated visualization tools to uncover deep insights and drive strategic outcomes.
+🌟 Explore my portfolio where advanced data science meets real-world applications. As a graduate student specializing in Data Science at Middle Tennessee State University, I leverage cutting-edge analytical techniques to derive actionable insights from complex datasets.
 
 ## 🎓 Educational Background
 
@@ -18,18 +18,42 @@
 ## 🚀 Featured Projects
 
 ### 🍴 AI-Driven Restaurant Recommender System
-Develop content-based and collaborative recommender systems using PCA and SVD to enhance restaurant recommendations using Yelp's detailed dataset.
+- **Situation:** Faced with the challenge of enhancing restaurant recommendations, this project utilizes the Yelp dataset, which includes detailed profiles, user reviews, and metadata.
+- **Task:** Develop sophisticated content-based and collaborative recommender systems to reflect user preferences and current dining trends.
+- **Action:** 
+  - **Data Handling:** Employed Jupyter Notebook for extensive data cleaning and preprocessing, transforming JSON data into structured formats for analysis.
+  - **Content-Based Systems:** Implemented PCA and SVD to discern key features influencing user preferences, identifying similar cuisine types and restaurant categories.
+  - **Collaborative System:** Analyzed preferences for specific foods like sandwiches and preferences of patrons at popular spots such as 'Ace Bar'.
+- **Result:** The PCA and SVD techniques pinpointed restaurants with similar offerings, with the collaborative system aligning recommendations to user preferences, particularly enhancing personalization for Korean and other Asian cuisines.
+- **Conclusion:** Demonstrated the potential of sophisticated analytical techniques in crafting targeted and effective restaurant recommendations.
 - [Explore the Project](https://github.com/IamReshmaR/Restaurant-Recommeder-System)
 
 ### 🏡 Airbnb Price Prediction and Value Identification Model
-Develop predictive models using Lasso and Ridge regression and classification models to identify value listings and optimize pricing strategies for Airbnb hosts.
+- **Situation:** Airbnb's platform presents challenges in pricing and value identification for hosts and guests.
+- **Task:** Develop predictive models to accurately determine the price of Airbnb listings and identify high-value listings.
+- **Action:**
+  - Analyzed comprehensive Airbnb data, addressing issues like null values and outliers, and created dummy variables for more effective modeling.
+  - Applied Lasso and Ridge regression to predict prices and developed classification models (Logistic Regression, Decision Tree, Random Forest) to identify high-value listings.
+- **Result:** Successfully enhanced the accuracy of price predictions and identified the Random Forest Classifier as the most effective model for classifying high-value listings.
+- **Conclusion:** The models developed assist hosts in maximizing earnings and help guests find listings that align with their preferences and budget.
 - [Explore the Project](https://github.com/IamReshmaR/Airbnb-Price-Prediction-and-Value-Identification-Model)
 
 ## 📊 Interactive Dashboards
 
+### Introduction to Dashboards
+My dashboards are designed to provide interactive and in-depth insights into various data-driven challenges. Each dashboard leverages advanced visualization techniques and analytical methods to transform raw data into understandable and actionable information. These visualizations aim to facilitate strategic decision-making and offer intuitive exploration of datasets for diverse audiences.
+
 ### Employee Retention Dashboard
-Delve into employee retention metrics with an interactive dashboard designed for HR professionals to strategize better retention policies.
+Explore employee retention strategies and insights with this interactive dashboard, which uses advanced filtering and LOD calculations to identify turnover patterns across different departments and roles.
 - [View Directly on Tableau Public](https://public.tableau.com/app/profile/reshma.rajan3751/viz/RetentionDashboard_17149626230140/Dashboard2?publish=yes)
+
+### Product Portfolio Dashboard
+Gain insights into individual product performance and market trends through this comprehensive dashboard, featuring interactive KPIs and metrics.
+- [View Directly on Tableau Public](https://public.tableau.com/app/profile/reshma.rajan3751/viz/ProductPortfolioDashboard_17149623844010/ProductDashboard?publish=yes)
+
+### Employee Attrition Analysis Dashboard
+Delve into detailed analytics of employee attrition causes and patterns with this dashboard, utilizing complex LOD expressions for strategic HR planning.
+- [View Directly on Tableau Public](https://public.tableau.com/app/profile/reshma.rajan3751/viz/employee_attrition_17149631779560/EmployeeAttritionAnalysis?publish=yes)
 
 ## 🌐 Connect with Me
 
