@@ -1,52 +1,42 @@
 # Welcome to Reshma Rajan's Data Science Portfolio
 
-🌟 Dive into the world of data-driven innovation where I apply advanced analytics to solve complex challenges. As a graduate student in Data Science at Middle Tennessee State University, I specialize in transforming raw data into actionable insights using Python, SQL, and powerful data visualization tools.
+🌟 Dive into my world of data-driven decision-making where advanced analytics and machine learning meet practical applications. As a graduate student at Middle Tennessee State University specializing in Data Science, I harness the power of Python, SQL, and sophisticated visualization tools to uncover deep insights and drive strategic outcomes.
 
 ## 🎓 Educational Background
 
-- **Master of Science (Data Science)** - Middle Tennessee State University, TN (In progress)
-- **Master of Science (Structural Engineering)** - GPA 4.0, A P J Abdul Kalam Technological University, Kerala, India
-- **Bachelor of Technology (Civil Engineering)** - GPA 3.85, Kerala, India
+- **Master of Science in Data Science** (In progress) - Middle Tennessee State University, TN
+- **Master of Science in Structural Engineering** - GPA 4.0, A P J Abdul Kalam Technological University, Kerala, India
+- **Bachelor of Technology in Civil Engineering** - GPA 3.85, Kerala, India
 
 ## 💻 Technical Expertise
 
-- **Advanced Programming:** Proficient in Python, including libraries like SciPy and Matplotlib, and SQL.
-- **Machine Learning & AI:** Skilled in TensorFlow, PyTorch, and Scikit-learn.
-- **Data Visualization & Analytics:** Expert in using Tableau and Power BI.
-- **Cloud & Big Data Technologies:** Experienced with AWS and Azure.
+- **Programming Languages:** Python, SQL
+- **Machine Learning & AI:** TensorFlow, PyTorch, Scikit-learn
+- **Data Visualization:** Expertise in Tableau and Power BI
+- **Big Data Technologies:** Proficient with AWS and Azure services
 
 ## 🚀 Featured Projects
 
 ### 🍴 AI-Driven Restaurant Recommender System
-- **Situation:** Used the Yelp dataset with detailed restaurant profiles, user reviews, and metadata to enhance restaurant recommendations.
-- **Task:** Aimed to develop content-based and collaborative recommender systems using PCA and SVD.
-- **Action:**
-  - **Data Handling:** Utilized Jupyter Notebook for data cleaning, merging, and transformation.
-  - **Content-Based System:** Implemented PCA and SVD to identify key restaurant features and similarities.
-  - **Collaborative System:** Analyzed user preferences and dining trends at popular locations like 'Ace Bar'.
-- **Result:** Content-based system identified nuanced similarities across cuisines, while the collaborative system effectively matched recommendations with user preferences.
-- **Conclusion:** Demonstrated sophisticated analytical techniques in recommender systems to improve accuracy and personalization.
+Develop content-based and collaborative recommender systems using PCA and SVD to enhance restaurant recommendations using Yelp's detailed dataset.
 - [Explore the Project](https://github.com/IamReshmaR/Restaurant-Recommeder-System)
-- ![word cloud for 5 star rated reviews](assets/WC.png)
 
 ### 🏡 Airbnb Price Prediction and Value Identification Model
-- **Situation:** Addressed pricing and value-finding challenges in Airbnb's dynamic market.
-- **Task:** Developed models to predict listing prices and identify high-value listings.
-- **Action:**
-  - Analyzed Airbnb data, addressing null values, outliers, and creating dummy variables.
-  - Applied Lasso and Ridge regression for price prediction.
-  - Used classification models like Logistic Regression, Decision Tree, and Random Forest for identifying high-value listings.
-- **Result:** Achieved improved prediction accuracy and identified the best model for classifying high-value listings.
-- **Conclusion:** Models help hosts optimize earnings and assist guests in finding ideal accommodations.
+Develop predictive models using Lasso and Ridge regression and classification models to identify value listings and optimize pricing strategies for Airbnb hosts.
 - [Explore the Project](https://github.com/IamReshmaR/Airbnb-Price-Prediction-and-Value-Identification-Model)
+
+## 📊 Interactive Dashboards
+
+### Employee Retention Dashboard
+Delve into employee retention metrics with an interactive dashboard designed for HR professionals to strategize better retention policies.
+- [View Directly on Tableau Public](https://public.tableau.com/views/RetentionDashboard_17149626230140/Dashboard2?:showVizHome=no&:embed=true)
 
 ## 🌐 Connect with Me
 
-Let's collaborate or explore more about my work:
+Interested in my work or looking for collaboration? Let's connect!
 
 - **Email:** [reshmarajan3590@gmail.com](mailto:reshmarajan3590@gmail.com)
-- **LinkedIn:** [Reshma Rajan on LinkedIn](#)
+- **LinkedIn:** [Visit my LinkedIn](https://www.linkedin.com/in/reshma-rajan) (Replace with actual LinkedIn URL)
 - **Phone:** 615-638-9013
 
-Thank you for exploring my portfolio. I look forward to making a significant impact together in the world of data science!
-
+Thank you for visiting my portfolio. I am eager to explore potential opportunities and take on challenging projects that leverage my skills in data science to make a meaningful impact.
