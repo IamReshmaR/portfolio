@@ -10,8 +10,6 @@
 
 ## 💻 Technical Expertise
 
-## 💻 Technical Expertise
-
 - **Programming Languages:** Proficient in Python and SQL, with extensive experience using Python for data analysis, machine learning, and automation, as well as SQL for database management and complex queries.
 - **Data Manipulation and Analysis:** Advanced skills in using Excel for data manipulation, including complex functions like VLOOKUP, pivot tables, and macros to streamline workflows and enhance data interaction.
 - **API Integration:** Skilled in utilizing APIs for data retrieval, integration, and automation, enhancing project capabilities and data richness in real-time applications.
@@ -20,7 +18,6 @@
 - **Computer Vision:** Experienced in computer vision projects using OpenCV and deep learning frameworks to develop applications like facial recognition and object detection.
 - **Data Visualization:** Expertise in Tableau and Power BI for creating compelling, interactive dashboards and visualizations that convey complex data in an accessible way.
 - **Big Data Technologies:** Proficient with AWS and Azure services, leveraging cloud solutions to manage, analyze, and scale big data workflows effectively.
-
 
 ## 🚀 Featured Projects
 
