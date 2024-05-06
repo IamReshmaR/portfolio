@@ -21,6 +21,16 @@
 
 ## 🚀 Featured Projects
 
+### 🌧️ Rainfall Forecasting Model for an Australian Weather Company
+- **Situation:** Tasked with improving weather prediction accuracy for an Australian weather forecasting company.
+- **Task:** Develop predictive models to accurately forecast rainfall and enhance decision-making tools.
+- **Action:**
+  - **Data Collection & Cleansing:** Gathered and preprocessed extensive meteorological data across Australia.
+  - **Machine Learning Models:** Developed and optimized logistic regression and random forest models to predict next-day rainfall.
+  - **Model Selection:** Evaluated models based on accuracy, choosing the most effective model based on specific client needs.
+- **Result:** Successfully implemented the random forest model for its accuracy in reducing false positives, significantly enhancing forecasting reliability and company market share.
+- **Conclusion:** The project set a new industry standard for accuracy and reliability in weather forecasting.
+
 ### 🍴 AI-Driven Restaurant Recommender System
 - **Situation:** Faced with the challenge of enhancing restaurant recommendations, this project utilizes the Yelp dataset, which includes detailed profiles, user reviews, and metadata.
 - **Task:** Develop sophisticated content-based and collaborative recommender systems to reflect user preferences and current dining trends.
