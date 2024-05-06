@@ -29,7 +29,7 @@ Develop predictive models using Lasso and Ridge regression and classification mo
 
 ### Employee Retention Dashboard
 Delve into employee retention metrics with an interactive dashboard designed for HR professionals to strategize better retention policies.
-- [View Directly on Tableau Public](https://public.tableau.com/views/RetentionDashboard_17149626230140/Dashboard2?:showVizHome=no&:embed=true)
+- [View Directly on Tableau Public](https://public.tableau.com/app/profile/reshma.rajan3751/viz/RetentionDashboard_17149626230140/Dashboard2?publish=yes)
 
 ## 🌐 Connect with Me
 
