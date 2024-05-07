@@ -30,7 +30,7 @@
   - **Model Selection:** Evaluated models based on accuracy, choosing the most effective model based on specific client needs.
 - **Result:** Successfully implemented the random forest model for its accuracy in reducing false positives, significantly enhancing forecasting reliability and company market share.
 - **Conclusion:** The project set a new industry standard for accuracy and reliability in weather forecasting.
-- - [Explore the Project](https://github.com/IamReshmaR/Rainfall-Prediction)
+- [Explore the Project](https://github.com/IamReshmaR/Rainfall-Prediction)
 
 ### 🍴 AI-Driven Restaurant Recommender System
 - **Situation:** Faced with the challenge of enhancing restaurant recommendations, this project utilizes the Yelp dataset, which includes detailed profiles, user reviews, and metadata.
