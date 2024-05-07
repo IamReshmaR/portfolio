@@ -30,6 +30,7 @@
   - **Model Selection:** Evaluated models based on accuracy, choosing the most effective model based on specific client needs.
 - **Result:** Successfully implemented the random forest model for its accuracy in reducing false positives, significantly enhancing forecasting reliability and company market share.
 - **Conclusion:** The project set a new industry standard for accuracy and reliability in weather forecasting.
+- - [Explore the Project](https://github.com/IamReshmaR/Rainfall-Prediction)
 
 ### 🍴 AI-Driven Restaurant Recommender System
 - **Situation:** Faced with the challenge of enhancing restaurant recommendations, this project utilizes the Yelp dataset, which includes detailed profiles, user reviews, and metadata.
@@ -74,7 +75,7 @@ Delve into detailed analytics of employee attrition causes and patterns with thi
 Interested in my work or looking for collaboration? Let's connect!
 
 - **Email:** [reshmarajan3590@gmail.com](mailto:reshmarajan3590@gmail.com)
-- **LinkedIn:** [Visit my LinkedIn](https://www.linkedin.com/in/reshma-rajan) (Replace with actual LinkedIn URL)
+- **LinkedIn:** [Visit my LinkedIn](https://www.linkedin.com/in/reshmarajan3590)
 - **Phone:** 615-638-9013
 
 Thank you for visiting my portfolio. I am eager to explore potential opportunities and take on challenging projects that leverage my skills in data science to make a meaningful impact.
