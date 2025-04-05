@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="1200" height="630" fill="url(#grad1)"/>
+  
+  <!-- Title -->
+  <text x="80" y="120" fill="white" font-family="Inter, system-ui" font-size="48" font-weight="bold">
+    SQL Data Analysis Portfolio
+  </text>
+  
+  <!-- Description -->
+  <text x="80" y="180" fill="#E2E8F0" font-family="Inter, system-ui" font-size="24" width="800">
+    <tspan x="80" dy="0">Advanced SQL queries and analytics showcasing</tspan>
+    <tspan x="80" dy="35">complex database operations and business intelligence</tspan>
+  </text>
+  
+  <!-- Tech Tags -->
+  <g transform="translate(80, 280)">
+    <rect width="100" height="40" rx="20" fill="#4C1D95" opacity="0.2"/>
+    <text x="50" y="25" fill="#A78BFA" font-family="Inter, system-ui" font-size="16" text-anchor="middle">SQL</text>
+  </g>
+  
+  <g transform="translate(200, 280)">
+    <rect width="160" height="40" rx="20" fill="#1D4ED8" opacity="0.2"/>
+    <text x="80" y="25" fill="#93C5FD" font-family="Inter, system-ui" font-size="16" text-anchor="middle">Data Analysis</text>
+  </g>
+  
+  <g transform="translate(380, 280)">
+    <rect width="180" height="40" rx="20" fill="#065F46" opacity="0.2"/>
+    <text x="90" y="25" fill="#6EE7B7" font-family="Inter, system-ui" font-size="16" text-anchor="middle">Business Intelligence</text>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="1000" cy="200" r="120" fill="url(#grad2)" opacity="0.4"/>
+  <circle cx="950" cy="150" r="80" fill="url(#grad3)" opacity="0.3"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="grad1" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" style="stop-color:#064E3B"/>
+      <stop offset="100%" style="stop-color:#065F46"/>
+    </linearGradient>
+    <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#10B981"/>
+      <stop offset="100%" style="stop-color:#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="grad3" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#34D399"/>
+      <stop offset="100%" style="stop-color:#34D399" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg> 
