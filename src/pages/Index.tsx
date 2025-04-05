@@ -1,12 +1,26 @@
 import React from 'react';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Experience from '@/components/Experience';
+import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
+import TableauPortfolio from '@/components/TableauPortfolio';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <main className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
-        <p className="text-lg">This is the home page of my portfolio.</p>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <TableauPortfolio />
+        <Contact />
       </main>
+      <Footer />
     </div>
   );
 };

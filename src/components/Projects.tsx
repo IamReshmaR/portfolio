@@ -30,25 +30,39 @@ const Projects = () => {
   
   const projects = [
     {
-      title: "COVID-19 Data Analysis Dashboard",
-      description: "Interactive Tableau dashboard visualizing global COVID-19 data trends, vaccination rates, and regional impact analysis.",
-      image: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-      link: "https://github.com/IamReshmaR/covid19-analysis",
-      tags: ["Tableau", "Data Visualization", "COVID-19", "Healthcare"]
+      title: "🌧️ Rainfall Forecasting Model",
+      description: `Developed and optimized logistic regression and random forest models to predict next-day rainfall in Australia. 
+      Implemented extensive data collection and preprocessing of meteorological data, achieving significant improvements in forecasting reliability. 
+      The random forest model was selected for its superior accuracy in reducing false positives, setting a new industry standard.`,
+      image: "https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      link: "https://github.com/IamReshmaR/Rainfall-Forecasting-Model",
+      tags: ["Python", "Machine Learning", "Random Forest", "Data Analysis"]
     },
     {
-      title: "Machine Learning for Predictive Maintenance",
-      description: "Applied machine learning algorithms to predict equipment failures before they occur, reducing downtime and maintenance costs.",
-      image: "https://images.unsplash.com/photo-1581092921461-6484fdac3642?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-      link: "https://github.com/IamReshmaR/predictive-maintenance",
-      tags: ["Python", "Machine Learning", "TensorFlow", "Time Series"]
+      title: "🍴 Restaurant Recommender System",
+      description: `Built sophisticated content-based and collaborative recommender systems using the Yelp dataset. 
+      Implemented PCA and SVD techniques to analyze user preferences and restaurant features. 
+      Enhanced personalization for various cuisine types, particularly Korean and Asian restaurants.`,
+      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      link: "https://github.com/IamReshmaR/Restaurant-Recommeder-System",
+      tags: ["Python", "Machine Learning", "PCA", "SVD", "Recommender Systems"]
     },
     {
-      title: "Customer Segmentation Analysis",
-      description: "Used clustering algorithms to segment customers based on purchasing behavior and demographic data for targeted marketing campaigns.",
+      title: "🏡 Airbnb Price Prediction Model",
+      description: `Developed predictive models using Lasso and Ridge regression to determine Airbnb listing prices. 
+      Created classification models (Logistic Regression, Decision Tree, Random Forest) to identify high-value listings. 
+      Successfully enhanced price prediction accuracy and optimized value identification.`,
+      image: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      link: "https://github.com/IamReshmaR/Airbnb-Price-Prediction-and-Value-Identification-Model",
+      tags: ["Python", "Machine Learning", "Regression", "Classification"]
+    },
+    {
+      title: "📊 SQL Data Analysis",
+      description: `Comprehensive SQL data analysis project showcasing advanced querying techniques, data manipulation, 
+      and business insights generation. Demonstrated expertise in complex SQL operations and data-driven decision making.`,
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-      link: "https://github.com/IamReshmaR/customer-segmentation",
-      tags: ["Python", "K-Means", "Tableau"]
+      link: "https://github.com/IamReshmaR/SQL-Data-Analysis",
+      tags: ["SQL", "Data Analysis", "Business Intelligence"]
     }
   ];
   
@@ -65,12 +79,12 @@ const Projects = () => {
         </Transition>
         <Transition animation="fade" delay={400}>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            A selection of my recent data science projects, showcasing my analytical skills and problem-solving abilities.
+            A showcase of my data science projects, demonstrating expertise in machine learning, data analysis, and predictive modeling.
           </p>
         </Transition>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
