@@ -5,6 +5,7 @@ import Transition from "./Transition";
 interface ProjectCardProps {
   title: string;
   description: string;
+  image: string;
   link: string;
   tags?: string[];
   className?: string;
@@ -14,6 +15,7 @@ interface ProjectCardProps {
 const ProjectCard = ({ 
   title, 
   description, 
+  image,
   link, 
   tags = [],
   className,
@@ -30,9 +32,14 @@ const ProjectCard = ({
         className
       )}
     >
-      {/* Dark background with gradient */}
-      <div className="absolute inset-0 bg-[#0D1117] z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0D1117]/80 to-[#0D1117]" />
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={image} 
+          alt={title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/80 to-black" />
       </div>
       
       {/* Content */}
@@ -84,7 +91,7 @@ const ProjectCard = ({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors"
+            className="inline-flex items-center text-sm text-white hover:text-blue-400 transition-colors"
           >
             View Project <ArrowUpRight size={16} className="ml-1" />
           </a>
