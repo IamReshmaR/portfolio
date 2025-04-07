@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -7,13 +6,14 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const [rotatingText, setRotatingText] = useState("Tableau");
   
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
       
       // Update active section based on scroll position
-      const sections = ["home", "about", "projects", "skills", "contact"];
+      const sections = ["home", "about", "projects", "tableau", "contact"];
       
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -30,6 +30,18 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const words = ["Tableau", "Dashboard", "Visualization"];
+    let currentIndex = 0;
+    
+    const interval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % words.length;
+      setRotatingText(words[currentIndex]);
+    }, 3000); // Change word every 3 seconds
+    
+    return () => clearInterval(interval);
+  }, []);
   
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -43,7 +55,7 @@ const Navbar = () => {
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
     { name: "Projects", id: "projects" },
-    { name: "Skills", id: "skills" },
+    { name: rotatingText, id: "tableau" },
     { name: "Contact", id: "contact" }
   ];
   
@@ -72,8 +84,9 @@ const Navbar = () => {
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
                 className={cn(
-                  "nav-link text-sm font-medium",
-                  activeSection === link.id ? "active" : ""
+                  "nav-link text-sm font-medium transition-all duration-300",
+                  activeSection === link.id ? "active" : "",
+                  link.id === "tableau" ? "min-w-[120px] text-center" : ""
                 )}
               >
                 {link.name}
