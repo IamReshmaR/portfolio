@@ -69,7 +69,7 @@ const About = () => {
               <div className="relative max-w-[280px] mx-auto opacity-0 animate-fade-in">
                 <div className="aspect-square rounded-full overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 shadow-[0_0_30px_rgba(255,255,255,0.1)] transform hover:scale-105 transition-all duration-700">
                   <img 
-                    src="/src/assets/images/1710114314301.jpg" 
+                    src="/profile.jpg" 
                     alt="Reshma Rajan"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                   />
