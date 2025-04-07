@@ -58,35 +58,4 @@
 
 .animate-arrow-bounce {
   animation: arrow-bounce 1.5s ease-in-out infinite;
-}
-
-.departure-text {
-  font-family: 'Fira Sans', monospace;
-  letter-spacing: 2px;
-}
-
-.departure-letter {
-  display: inline-block;
-  min-width: 20px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.departure-letter.changing {
-  animation: letter-change 0.1s infinite;
-}
-
-@keyframes letter-change {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(10px);
-  }
 } 
