@@ -32,7 +32,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    const words = ["Tableau", "Golden Phi Kappa Phi", "Visualization"];
+    const words = ["Tableau", "Dashboards", "Visualization"];
     let currentIndex = 0;
     
     const interval = setInterval(() => {

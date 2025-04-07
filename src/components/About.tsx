@@ -60,7 +60,7 @@ const About = () => {
                   like <span className="highlight-text">generative AI</span> can elevate modern analytics.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed mt-4">
-                  As a proud member of <span className="highlight-text">Phi Kappa Phi</span>, I embody academic excellence and leadership in the field of data science.
+                  As a proud member of <span className="highlight-text">Golden Phi Kappa Phi</span>, I embody academic excellence and leadership in the field of data science.
                 </p>
               </div>
             </Transition>
