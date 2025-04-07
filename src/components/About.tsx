@@ -1,5 +1,6 @@
 import React from 'react';
 import Transition from './Transition';
+import profileImage from '@/assets/images/1710114314301.jpg';
 
 interface Experience {
   title: string;
@@ -60,7 +61,7 @@ const About = () => {
                   like <span className="highlight-text">generative AI</span> can elevate modern analytics.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed mt-4">
-                  As a proud member of <span className="highlight-text">Golden Phi Kappa Phi</span>, I embody academic excellence and leadership in the field of data science.
+                  As a proud member of <span className="text-yellow-400 font-semibold">Phi Kappa Phi</span>, I embody academic excellence and leadership in the field of data science.
                 </p>
               </div>
             </Transition>
@@ -69,7 +70,7 @@ const About = () => {
               <div className="relative max-w-[280px] mx-auto opacity-0 animate-fade-in">
                 <div className="aspect-square rounded-full overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 shadow-[0_0_30px_rgba(255,255,255,0.1)] transform hover:scale-105 transition-all duration-700">
                   <img 
-                    src="/profile.jpg" 
+                    src={profileImage}
                     alt="Reshma Rajan"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                   />
