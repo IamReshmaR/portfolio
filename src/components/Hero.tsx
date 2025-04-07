@@ -1,12 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import TypeWriter from './TypeWriter';
 import Transition from './Transition';
 
 const Hero: React.FC = () => {
   const [showDescription, setShowDescription] = useState(false);
   const [showSocial, setShowSocial] = useState(false);
   const [showButtons, setShowButtons] = useState(false);
+  const [displayText, setDisplayText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const fullText = "Data Scientist";
+  const welcomeText = "Welcome to My Data Science Portfolio";
+  const descriptionText = "I'm a Data Scientist and Analyst with a focus on building robust data pipelines, performing advanced analytics, and delivering actionable insights.";
+  const lifecycleText = "I work across the data lifecycle—from exploration and preprocessing to modeling and visualization—with a strong grasp of statistical reasoning, machine learning, and workflow automation. I also explore generative AI to enhance analytical capabilities where relevant.";
+
+  useEffect(() => {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let interval: NodeJS.Timeout;
+
+    if (currentIndex < fullText.length) {
+      interval = setInterval(() => {
+        setDisplayText(prev => {
+          const newText = prev.split('');
+          newText[currentIndex] = letters[Math.floor(Math.random() * 26)];
+          return newText.join('');
+        });
+      }, 30);
+
+      setTimeout(() => {
+        clearInterval(interval);
+        setDisplayText(prev => {
+          const newText = prev.split('');
+          newText[currentIndex] = fullText[currentIndex];
+          return newText.join('');
+        });
+        setCurrentIndex(prev => prev + 1);
+      }, 200);
+    } else {
+      setShowDescription(true);
+    }
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -18,53 +53,37 @@ const Hero: React.FC = () => {
   return (
     <div className="min-h-[70vh] flex flex-col justify-center bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        {/* Main Content */}
         <div className="max-w-3xl mx-auto">
           <Transition animation="fade">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-8">
-              <TypeWriter
-                text="Data Scientist"
-                delay={50}
-                onComplete={() => setShowDescription(true)}
-              />
+            <h1 className="text-4xl sm:text-5xl font-bold mb-8 font-mono">
+              {displayText}
             </h1>
           </Transition>
 
           {showDescription && (
             <Transition animation="slide-up">
-              <div className="text-lg sm:text-xl text-gray-300 mb-12">
-                <TypeWriter
-                  text="Welcome to My Data Science Portfolio"
-                  delay={30}
-                  onComplete={() => {
-                    setShowButtons(true);
-                    setShowSocial(true);
-                  }}
-                />
-                <br />
-                <TypeWriter
-                  text="I'm a Data Scientist and Analyst with a focus on building robust data pipelines, performing advanced analytics, and delivering actionable insights."
-                  delay={25}
-                />
-                <br />
-                <TypeWriter
-                  text="I work across the data lifecycle—from exploration and preprocessing to modeling and visualization—with a strong grasp of statistical reasoning, machine learning, and workflow automation. I also explore generative AI to enhance analytical capabilities where relevant."
-                  delay={25}
-                />
+              <div className="text-lg sm:text-xl text-gray-300 mb-12 space-y-4">
+                <p className="font-mono animate-fade-in">
+                  {welcomeText}
+                </p>
+                <p className="font-mono animate-fade-in">
+                  {descriptionText}
+                </p>
+                <p className="font-mono animate-fade-in">
+                  {lifecycleText}
+                </p>
               </div>
             </Transition>
           )}
 
-          {/* Navigation Buttons */}
           {showButtons && (
             <Transition animation="slide-up" delay={100}>
               <div className="flex flex-wrap gap-4 mb-12">
-                {/* About Me button removed */}
+                {/* Navigation buttons can be added here */}
               </div>
             </Transition>
           )}
           
-          {/* Social Links */}
           {showSocial && (
             <Transition animation="fade" delay={200}>
               <div className="flex space-x-8">
