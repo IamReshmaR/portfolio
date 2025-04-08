@@ -8,11 +8,14 @@ const Hero: React.FC = () => {
   const [showButtons, setShowButtons] = useState(false);
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [welcomeText, setWelcomeText] = useState('');
+  const [descriptionText, setDescriptionText] = useState('');
+  const [lifecycleText, setLifecycleText] = useState('');
 
   const fullText = "Data Scientist";
-  const welcomeText = "Welcome to My Data Science Portfolio";
-  const descriptionText = "I'm a Data Scientist and Analyst with a focus on building robust data pipelines, performing advanced analytics, and delivering actionable insights.";
-  const lifecycleText = "I work across the data lifecycle—from exploration and preprocessing to modeling and visualization—with a strong grasp of statistical reasoning, machine learning, and workflow automation. I also explore generative AI to enhance analytical capabilities where relevant.";
+  const welcomeFullText = "Welcome to My Data Science Portfolio";
+  const descriptionFullText = "I'm a Data Scientist and Analyst with a focus on building robust data pipelines, performing advanced analytics, and delivering actionable insights.";
+  const lifecycleFullText = "I work across the data lifecycle—from exploration and preprocessing to modeling and visualization—with a strong grasp of statistical reasoning, machine learning, and workflow automation. I also explore generative AI to enhance analytical capabilities where relevant.";
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -26,6 +29,47 @@ const Hero: React.FC = () => {
       setShowDescription(true);
     }
   }, [currentIndex]);
+
+  useEffect(() => {
+    if (showDescription) {
+      let welcomeIndex = 0;
+      let descriptionIndex = 0;
+      let lifecycleIndex = 0;
+
+      const welcomeInterval = setInterval(() => {
+        if (welcomeIndex < welcomeFullText.length) {
+          setWelcomeText(prev => prev + welcomeFullText[welcomeIndex]);
+          welcomeIndex++;
+        } else {
+          clearInterval(welcomeInterval);
+        }
+      }, 50);
+
+      const descriptionInterval = setInterval(() => {
+        if (descriptionIndex < descriptionFullText.length) {
+          setDescriptionText(prev => prev + descriptionFullText[descriptionIndex]);
+          descriptionIndex++;
+        } else {
+          clearInterval(descriptionInterval);
+        }
+      }, 30);
+
+      const lifecycleInterval = setInterval(() => {
+        if (lifecycleIndex < lifecycleFullText.length) {
+          setLifecycleText(prev => prev + lifecycleFullText[lifecycleIndex]);
+          lifecycleIndex++;
+        } else {
+          clearInterval(lifecycleInterval);
+        }
+      }, 20);
+
+      return () => {
+        clearInterval(welcomeInterval);
+        clearInterval(descriptionInterval);
+        clearInterval(lifecycleInterval);
+      };
+    }
+  }, [showDescription]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -48,14 +92,17 @@ const Hero: React.FC = () => {
           {showDescription && (
             <Transition animation="slide-up">
               <div className="text-lg sm:text-xl text-gray-300 mb-12 space-y-4">
-                <p className="font-mono animate-fade-in">
+                <p className="font-mono">
                   {welcomeText}
+                  {welcomeText.length < welcomeFullText.length && <span className="typewriter-cursor">|</span>}
                 </p>
-                <p className="font-mono animate-fade-in">
+                <p className="font-mono">
                   {descriptionText}
+                  {descriptionText.length < descriptionFullText.length && <span className="typewriter-cursor">|</span>}
                 </p>
-                <p className="font-mono animate-fade-in">
+                <p className="font-mono">
                   {lifecycleText}
+                  {lifecycleText.length < lifecycleFullText.length && <span className="typewriter-cursor">|</span>}
                 </p>
               </div>
             </Transition>
