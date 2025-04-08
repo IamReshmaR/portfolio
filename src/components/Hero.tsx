@@ -18,14 +18,14 @@ const Hero: React.FC = () => {
   useEffect(() => {
     if (currentIndex < fullText.length) {
       const timeout = setTimeout(() => {
-        setDisplayText(prev => prev + fullText[currentIndex]);
+        setDisplayText(fullText.slice(0, currentIndex + 1));
         setCurrentIndex(prev => prev + 1);
-      }, 100);
+      }, 50);
 
       return () => clearTimeout(timeout);
     } else {
       setShowDescription(true);
-      setTimeout(() => setShowSocial(true), 1000);
+      setTimeout(() => setShowSocial(true), 500);
     }
   }, [currentIndex]);
 
@@ -37,23 +37,23 @@ const Hero: React.FC = () => {
 
       const welcomeInterval = setInterval(() => {
         if (welcomeIndex < welcomeFullText.length) {
-          setWelcomeText(prev => prev + welcomeFullText[welcomeIndex]);
+          setWelcomeText(welcomeFullText.slice(0, welcomeIndex + 1));
           welcomeIndex++;
         } else {
           clearInterval(welcomeInterval);
           welcomeComplete = true;
         }
-      }, 30);
+      }, 10);
 
       const lifecycleInterval = setInterval(() => {
         if (welcomeComplete && lifecycleIndex < lifecycleFullText.length) {
-          setLifecycleDisplayText(prev => prev + lifecycleFullText[lifecycleIndex]);
+          setLifecycleDisplayText(lifecycleFullText.slice(0, lifecycleIndex + 1));
           lifecycleIndex++;
         } else if (lifecycleIndex >= lifecycleFullText.length) {
           clearInterval(lifecycleInterval);
           setShowButtons(true);
         }
-      }, 30);
+      }, 10);
 
       return () => {
         clearInterval(welcomeInterval);
