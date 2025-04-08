@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import Transition from './Transition';
 
@@ -6,6 +6,26 @@ const Hero: React.FC = () => {
   const [showDescription, setShowDescription] = useState(false);
   const [showSocial, setShowSocial] = useState(false);
   const [showButtons, setShowButtons] = useState(false);
+  const [displayText, setDisplayText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const fullText = "Data Scientist";
+  const welcomeText = "Welcome to My Data Science Portfolio";
+  const descriptionText = "I'm a Data Scientist and Analyst with a focus on building robust data pipelines, performing advanced analytics, and delivering actionable insights.";
+  const lifecycleText = "I work across the data lifecycle—from exploration and preprocessing to modeling and visualization—with a strong grasp of statistical reasoning, machine learning, and workflow automation. I also explore generative AI to enhance analytical capabilities where relevant.";
+
+  useEffect(() => {
+    if (currentIndex < fullText.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText(prev => prev + fullText[currentIndex]);
+        setCurrentIndex(prev => prev + 1);
+      }, 100);
+
+      return () => clearTimeout(timeout);
+    } else {
+      setShowDescription(true);
+    }
+  }, [currentIndex]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -20,7 +40,8 @@ const Hero: React.FC = () => {
         <div className="max-w-3xl mx-auto">
           <Transition animation="fade">
             <h1 className="text-4xl sm:text-5xl font-bold mb-8 font-mono">
-              Data Scientist
+              {displayText}
+              {currentIndex < fullText.length && <span className="typewriter-cursor">|</span>}
             </h1>
           </Transition>
 
@@ -28,13 +49,13 @@ const Hero: React.FC = () => {
             <Transition animation="slide-up">
               <div className="text-lg sm:text-xl text-gray-300 mb-12 space-y-4">
                 <p className="font-mono animate-fade-in">
-                  Welcome to My Data Science Portfolio
+                  {welcomeText}
                 </p>
                 <p className="font-mono animate-fade-in">
-                  I'm a Data Scientist and Analyst with a focus on building robust data pipelines, performing advanced analytics, and delivering actionable insights.
+                  {descriptionText}
                 </p>
                 <p className="font-mono animate-fade-in">
-                  I work across the data lifecycle—from exploration and preprocessing to modeling and visualization—with a strong grasp of statistical reasoning, machine learning, and workflow automation. I also explore generative AI to enhance analytical capabilities where relevant.
+                  {lifecycleText}
                 </p>
               </div>
             </Transition>
