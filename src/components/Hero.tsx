@@ -25,6 +25,7 @@ const Hero: React.FC = () => {
       return () => clearTimeout(timeout);
     } else {
       setShowDescription(true);
+      setTimeout(() => setShowSocial(true), 1000);
     }
   }, [currentIndex]);
 
@@ -32,6 +33,7 @@ const Hero: React.FC = () => {
     if (showDescription) {
       let welcomeIndex = 0;
       let lifecycleIndex = 0;
+      let welcomeComplete = false;
 
       const welcomeInterval = setInterval(() => {
         if (welcomeIndex < welcomeFullText.length) {
@@ -39,15 +41,17 @@ const Hero: React.FC = () => {
           welcomeIndex++;
         } else {
           clearInterval(welcomeInterval);
+          welcomeComplete = true;
         }
       }, 30);
 
       const lifecycleInterval = setInterval(() => {
-        if (lifecycleIndex < lifecycleFullText.length) {
+        if (welcomeComplete && lifecycleIndex < lifecycleFullText.length) {
           setLifecycleDisplayText(prev => prev + lifecycleFullText[lifecycleIndex]);
           lifecycleIndex++;
-        } else {
+        } else if (lifecycleIndex >= lifecycleFullText.length) {
           clearInterval(lifecycleInterval);
+          setShowButtons(true);
         }
       }, 30);
 
@@ -79,11 +83,11 @@ const Hero: React.FC = () => {
           {showDescription && (
             <Transition animation="slide-up">
               <div className="text-lg sm:text-xl text-gray-300 mb-12 space-y-4">
-                <p className="font-mono">
+                <p className="font-mono whitespace-pre-wrap">
                   {welcomeText}
                   {welcomeText.length < welcomeFullText.length && <span className="typewriter-cursor">|</span>}
                 </p>
-                <p className="font-mono">
+                <p className="font-mono whitespace-pre-wrap">
                   {lifecycleDisplayText}
                   {lifecycleDisplayText.length < lifecycleFullText.length && <span className="typewriter-cursor">|</span>}
                 </p>
