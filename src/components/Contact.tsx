@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Mail, MapPin, Phone, ArrowRight } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
 import Transition from "./Transition";
 
 const Contact = () => {
@@ -41,7 +41,7 @@ const Contact = () => {
         </Transition>
         <Transition animation="fade" delay={400}>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Interested in working together? Feel free to reach out through any of the channels below.
+            Interested in working together? Feel free to reach out through email.
           </p>
         </Transition>
       </div>
@@ -49,8 +49,6 @@ const Contact = () => {
       <div className="max-w-2xl mx-auto">
         <Transition animation="scale" delay={200}>
           <div className="space-y-8">
-            <h3 className="text-xl font-bold mb-6">Contact Information</h3>
-            
             <div className="flex items-start space-x-4 group">
               <div className="p-3 rounded-full bg-primary/10">
                 <Mail size={20} />
@@ -71,46 +69,23 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="flex items-start space-x-4">
-              <div className="p-3 rounded-full bg-primary/10">
-                <Phone size={20} />
-              </div>
-              <div>
-                <h4 className="text-lg font-medium mb-1">Phone</h4>
-                <a 
-                  href="tel:6156389013" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  615-638-9013
-                </a>
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <div className="p-3 rounded-full bg-primary/10">
-                <MapPin size={20} />
-              </div>
-              <div>
-                <h4 className="text-lg font-medium mb-1">Location</h4>
-                <p className="text-muted-foreground">
-                  Nashville, TN
-                </p>
-              </div>
-            </div>
 
             <div className="pt-8">
               <h3 className="text-xl font-bold mb-6">Follow Me</h3>
               <div className="flex space-x-4">
                 <a 
-                  href="#" 
+                  href="https://github.com/IamReshmaR" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 rounded-full border border-border/50 hover:border-primary hover:bg-primary/5 transition-all duration-300"
                   aria-label="GitHub"
                 >
                   GitHub
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/reshmarajan3590" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 rounded-full border border-border/50 hover:border-primary hover:bg-primary/5 transition-all duration-300"
                   aria-label="LinkedIn"
                 >
