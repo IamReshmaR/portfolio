@@ -13,8 +13,7 @@ const Hero: React.FC = () => {
 
   const fullText = "Data Scientist";
   const welcomeFullText = "My name is Reshma Rajan, and I'm a data professional driven by the challenge of uncovering insights from complex datasets. I specialize in building robust data pipelines, conducting advanced analytics, and delivering actionable insights that drive informed business decisions.";
-  const lifecycleFullText = "I work across the entire data lifecycle—from data exploration and preprocessing to modeling and visualization—bringing a strong foundation in statistical reasoning, machine learning, and workflow automation. I also actively explore the use of generative AI to augment analytical capabilities where appropriate. ";
-  const goldenText = "Golden Phi Kappa Phi";
+  const lifecycleFullText = "I work across the entire data lifecycle—from data exploration and preprocessing to modeling and visualization—bringing a strong foundation in statistical reasoning, machine learning, and workflow automation. I also actively explore the use of generative AI to augment analytical capabilities where appropriate.";
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -87,7 +86,6 @@ const Hero: React.FC = () => {
                 <p className="font-mono">
                   {lifecycleDisplayText}
                   {lifecycleDisplayText.length < lifecycleFullText.length && <span className="typewriter-cursor">|</span>}
-                  <span className="text-[#FFD700] highlight-text animate-fade-in">{goldenText}</span>
                 </p>
               </div>
             </Transition>
