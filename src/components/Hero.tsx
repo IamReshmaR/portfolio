@@ -9,13 +9,11 @@ const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [welcomeText, setWelcomeText] = useState('');
-  const [descriptionText, setDescriptionText] = useState('');
   const [lifecycleDisplayText, setLifecycleDisplayText] = useState('');
 
   const fullText = "Data Scientist";
-  const welcomeFullText = "My name is Reshma Rajan, and I'm a data professional driven by the challenge of uncovering insights from complex datasets. I specialize in";
-  const descriptionFullText = "building robust data pipelines, performing advanced analytics, and delivering actionable insights that drive business decisions.";
-  const lifecycleFullText = "I work across the data lifecycle—from exploration and preprocessing to modeling and visualization—with a strong grasp of statistical reasoning, machine learning, and workflow automation. I also explore generative AI to enhance analytical capabilities where relevant. ";
+  const welcomeFullText = "My name is Reshma Rajan, and I'm a data professional driven by the challenge of uncovering insights from complex datasets. I specialize in building robust data pipelines, conducting advanced analytics, and delivering actionable insights that drive informed business decisions.";
+  const lifecycleFullText = "I work across the entire data lifecycle—from data exploration and preprocessing to modeling and visualization—bringing a strong foundation in statistical reasoning, machine learning, and workflow automation. I also actively explore the use of generative AI to augment analytical capabilities where appropriate. ";
   const goldenText = "Golden Phi Kappa Phi";
 
   useEffect(() => {
@@ -34,7 +32,6 @@ const Hero: React.FC = () => {
   useEffect(() => {
     if (showDescription) {
       let welcomeIndex = 0;
-      let descriptionIndex = 0;
       let lifecycleIndex = 0;
 
       const welcomeInterval = setInterval(() => {
@@ -43,15 +40,6 @@ const Hero: React.FC = () => {
           welcomeIndex++;
         } else {
           clearInterval(welcomeInterval);
-        }
-      }, 30);
-
-      const descriptionInterval = setInterval(() => {
-        if (descriptionIndex < descriptionFullText.length) {
-          setDescriptionText(prev => prev + descriptionFullText[descriptionIndex]);
-          descriptionIndex++;
-        } else {
-          clearInterval(descriptionInterval);
         }
       }, 30);
 
@@ -66,7 +54,6 @@ const Hero: React.FC = () => {
 
       return () => {
         clearInterval(welcomeInterval);
-        clearInterval(descriptionInterval);
         clearInterval(lifecycleInterval);
       };
     }
@@ -96,10 +83,6 @@ const Hero: React.FC = () => {
                 <p className="font-mono">
                   {welcomeText}
                   {welcomeText.length < welcomeFullText.length && <span className="typewriter-cursor">|</span>}
-                </p>
-                <p className="font-mono">
-                  {descriptionText}
-                  {descriptionText.length < descriptionFullText.length && <span className="typewriter-cursor">|</span>}
                 </p>
                 <p className="font-mono">
                   {lifecycleDisplayText}
